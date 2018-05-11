@@ -13,4 +13,12 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require mapsjs-core
+//= require mapsjs-service
+//= require mapsjs-mapevents
+//= require mapsjs-ui
+//= require maps-renderer
 //= require_tree .
