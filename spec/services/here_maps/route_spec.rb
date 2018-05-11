@@ -8,7 +8,6 @@ describe HereMaps::Route do
   end
 
   it 'gets the link ids as an array' do
-    expect(HereMaps::Route.new(response_xml).link_ids).to eq([])
+    expect(HereMaps::Route.new(response_xml).link_ids).to eq([64364488, 68522107, 64364488, 68522107])
   end
-
 end
