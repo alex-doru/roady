@@ -6,9 +6,11 @@ class HereMapsService
   end
 
   def route_link_ids(departure, destination)
-    xml = HereMaps::RoutesApi.get(departure, destination)
+    xml = HereMaps::RoutesRepo.new.calculateroute(departure, destination)
     route = HereMaps::Route.new(xml)
-    route.link_ids
+    ids = route.request_ready_link_ids
+
+    HereMaps::TollsRepo.new.tolls(ids[2..-1])
   end
 
   def tolls(link_ids)

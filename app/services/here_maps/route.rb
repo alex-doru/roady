@@ -10,4 +10,8 @@ class HereMaps::Route
     end
     ids
   end
+
+  def request_ready_link_ids
+    link_ids.join(';')
+  end
 end
