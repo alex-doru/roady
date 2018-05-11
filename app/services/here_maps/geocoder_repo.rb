@@ -3,10 +3,7 @@ class HereMaps::GeocoderRepo
   base_uri 'geocoder.cit.api.here.com'
 
   def initialize()
-    @options = { query: {
-      app_id: '0jlbpiZs18Eh52AdfTqO',
-      app_code:'THjSpTiTnmQB6kWjfgTtIQ',
-    }}
+    @options = HereMaps::Config.sign(query: {})
   end
 
   def geocode(address)

@@ -6,14 +6,12 @@ class HereMaps::TollsRepo
   base_uri 'http://tce.cit.api.here.com'
 
   def initialize()
-    @options = { query: {
-        app_id: '0jlbpiZs18Eh52AdfTqO',
-        app_code:'THjSpTiTnmQB6kWjfgTtIQ',
+    @options =  HereMaps::Config.sign({ query: {
         rollup: 'country',
         route: '',
         currency: 'EUR'
       }
-    }
+    })
   end
 
   def tolls(link_ids)
