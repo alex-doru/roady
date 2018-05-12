@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'calculator#new'
+  root to: 'calculators#new'
 
-  resource :calculator, only: [:new]
+  resource :calculator, only: [:new, :create]
 end
