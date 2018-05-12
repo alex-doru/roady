@@ -7,7 +7,7 @@ class HereMaps::TollsRepo
 
   def initialize()
     @options =  HereMaps::Config.sign({ query: {
-        rollup: 'country',
+        rollup: 'country;tollsys',
         route: '',
         currency: 'EUR'
       }
