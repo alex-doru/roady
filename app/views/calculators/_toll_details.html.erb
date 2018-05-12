@@ -1,0 +1,14 @@
+<% @calculator.tolls['costsByCountryAndTollSystem'].each do |country| %>
+  <div>
+    <% if country['country'].present? %>
+      <span>Country: <%= country['country'] %></span><br/>
+    <% end %>
+    <% if country['amountInTargetCurrency'].present? %>
+      <span>Amount: <%= country['amountInTargetCurrency'] %></span><br/>
+    <% end %>
+    <% if country['name'].present? %>
+      <span>Type: <%= country['name'] %> </span><br/>
+    <% end %>
+  </div>
+  <hr/>
+<% end %>

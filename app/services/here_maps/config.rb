@@ -9,8 +9,8 @@ class HereMaps::Config
   end
 
   def self.sign(options)
-    options[:query][:app_id] = self.instance.app_id
-    options[:query][:app_code] = self.instance.app_code
+    options[:query][:app_id] = '0jlbpiZs18Eh52AdfTqO'
+    options[:query][:app_code] = 'THjSpTiTnmQB6kWjfgTtIQ'
     options
   end
 end

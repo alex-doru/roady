@@ -1,3 +1,9 @@
-
-<div><%= render 'form' %></div>
+<div class='map-menu'>
+  <div>
+    <%= render 'form' %>
+  </div>
+  <div class="toll-details">
+    <%= render 'toll_details' if @calculator.present? %>
+  </div>
+</div>
 <div id="map" style="position:absolute; height:100%; background:grey; width: 100%;" ></div>
