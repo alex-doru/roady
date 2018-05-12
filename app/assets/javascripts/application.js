@@ -21,4 +21,5 @@
 //= require mapsjs-mapevents
 //= require mapsjs-ui
 //= require maps-renderer
+//= require autocomplete
 //= require_tree .
